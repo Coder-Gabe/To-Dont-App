@@ -1,0 +1,100 @@
+:root {
+    /* fonts */
+    --gh-title-font: 'Bebas Neue', sans-serif;
+    --gh-subtitle-font: 'Fira Sans', sans-serif;
+    --gh-heading-font: 'Bebas Neue', sans-serif;
+    --gh-body-font: 'Roboto', sans-serif;
+
+    /* colors */
+    --gh-primary-color: rgb(145, 203, 251);
+    --gh-secondary-color: rgb(66, 148, 186);
+    --gh-highlight-color: rgb(250, 225, 120);
+    --gh-dark-color: #212121;
+    --gh-light-color: #deeefb;
+    --gh-background-color: rgba(241, 19, 19, 0.8);
+
+    /* nav bar colors*/
+    --gh-nav-bg-color: rgba(33, 33, 33, 0.8);
+    --gh-nav-toggler: var(--gh-highlight-color);
+    --gh-nav-toggler-glow: rgba(250, 225, 120, 0.55);
+
+    /* form colors*/
+    --gh-formfocus-border-color: var(--gh-secondary-color);
+    --gh-formfocus-shadow: var(--gh-primary-color);
+    --gh-background-color: var(--gh-background-color);
+
+    /* text styles*/
+    --gh-title-color: var(--gh-dark-color);
+    --gh-font-size: 1.2rem;
+    --gh-font-weight: 400;
+    --gh-line-height: 1.5rem;
+}
+
+/* font-family: 'Allan', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Start Sticky footer CSS */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--gh-body-font);
+    font-size: var(--gh-font-size);
+    font-weight: var(--gh-font-weight);
+    line-height: var(--gh-line-height);
+    color: var(--gh-dark-color);
+    background: var(--gh-background-color);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+#mainNav {
+	background: var(--gh-background-color);
+}
+
+footer {
+	background: var(--gh-primary-color);
+	color: #deeefb;
+}
+
+footer .bi {
+	color: #deeefb;
+	font-size: 1.5rem;
+	padding-left: .5 rem;
+	transition: color.25s ease;
+}
+
+footer .bi:hover {
+	color: var(---gh-nav-toggler-glow);
+
+}
+
+.checklist {
+	list-style-type: none;
+}
+
+.checklist>li i{
+	color: orange;
+}
+
+.devIcons {
+	font-size: 3rem;
+	padding-left: .3rem;
+}
+
+.appLogo {
+	max-width: 400px;
+}
