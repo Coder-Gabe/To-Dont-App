@@ -6,12 +6,12 @@
     --gh-body-font: 'Roboto', sans-serif;
 
     /* colors */
-    --gh-primary-color: rgb(145, 203, 251);
+    --gh-primary-color: rgba(162, 128, 242, 0.817);
     --gh-secondary-color: rgb(66, 148, 186);
-    --gh-highlight-color: rgb(250, 225, 120);
+    --gh-highlight-color: rgba(199, 105, 213, 0.21);
     --gh-dark-color: #212121;
     --gh-light-color: #deeefb;
-    --gh-background-color: rgba(241, 19, 19, 0.8);
+    --gh-background-color: rgba(224, 22, 22, 0.8);
 
     /* nav bar colors*/
     --gh-nav-bg-color: rgba(33, 33, 33, 0.8);
@@ -40,7 +40,10 @@ font-family: 'Roboto', sans-serif;
 html,
 body {
     height: 100%;
+    
+    
 }
+
 
 body {
     display: flex;
@@ -50,24 +53,32 @@ body {
     font-weight: var(--gh-font-weight);
     line-height: var(--gh-line-height);
     color: var(--gh-dark-color);
-    background: var(--gh-background-color);
+    background: var(--gh-highlight-color);
+    
+    
+
 }
 
 main {
     flex-grow: 1;
+    
+     
 }
 
 footer {
     flex-shrink: 0;
 }
 
-#mainNav {
-	background: var(--gh-background-color);
+nav {
+	
+	background: var(--gh-primary-color);
+	
+
 }
 
 footer {
 	background: var(--gh-primary-color);
-	color: #deeefb;
+	
 }
 
 footer .bi {
@@ -98,3 +109,4 @@ footer .bi:hover {
 .appLogo {
 	max-width: 400px;
 }
+
