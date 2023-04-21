@@ -1,63 +1,63 @@
 var events = [{
-	event: "ComicCon",
+	chore: "running",
 	city: "New York",
-	state: "New York",
+	// state: "New York",
 	attendance: 240000,
 	date: "06/01/2017",
 },
 {
-	event: "ComicCon",
+	chore: "weightlifting",
 	city: "New York",
-	state: "New York",
+	// state: "New York",
 	attendance: 250000,
 	date: "06/01/2018",
 },
 {
-	event: "ComicCon",
+	chore: "reading a book",
 	city: "New York",
-	state: "New York",
+	// state: "New York",
 	attendance: 257000,
 	date: "06/01/2019",
 },
 {
-	event: "ComicCon",
+	chore: "volunteering",
 	city: "San Diego",
-	state: "California",
+	// state: "California",
 	attendance: 130000,
 	date: "06/01/2017",
 },
 {
-	event: "ComicCon",
+	chore: "feeding the homeless",
 	city: "San Diego",
-	state: "California",
+	// state: "California",
 	attendance: 140000,
 	date: "06/01/2018",
 },
 {
-	event: "ComicCon",
+	chore: "walking",
 	city: "San Diego",
-	state: "California",
+	// state: "California",
 	attendance: 150000,
 	date: "06/01/2019",
 },
 {
-	event: "HeroesCon",
+	chore: "Mowing Lawn",
 	city: "Charlotte",
-	state: "North Carolina",
+	// state: "North Carolina",
 	attendance: 40000,
 	date: "06/01/2017",
 },
 {
-	event: "HeroesCon",
+	chore: "running",
 	city: "Charlotte",
-	state: "North Carolina",
+	// state: "North Carolina",
 	attendance: 45000,
 	date: "06/01/2018",
 },
 {
-	event: "HeroesCon",
+	chore: "reading",
 	city: "Charlotte",
-	state: "North Carolina",
+	// state: "North Carolina",
 	attendance: 50000,
 	date: "06/01/2019",
 },
@@ -105,7 +105,7 @@ function buildDropDown() {
 
 	displayEventData(currentEvents);
 	displayStats(currentEvents);
-	document.getElementById('location').innerText = 'All Events';
+	document.getElementById('Not To Do').innerText = 'Not To Do';
 }
 
 
@@ -121,9 +121,9 @@ function displayEventData(currentEvents) {
 		let event = currentEvents[i];
 		let tableRow = document.importNode(template.content, true);
 
-		tableRow.querySelector('[data-id="event"]').textContent = event.event;
+		tableRow.querySelector('[data-id="chore"]').textContent = event.chore;
 		tableRow.querySelector('[data-id="city"]').textContent = event.city;
-		tableRow.querySelector('[data-id="state"]').textContent = event.state;
+		// tableRow.querySelector('[data-id="state"]').textContent = event.state;
 		tableRow.querySelector('[data-id="attendance"]').textContent = event.attendance.toLocaleString();
 		tableRow.querySelector('[data-id="date"]').textContent = new Date(event.date).toLocaleDateString();
 
@@ -251,15 +251,15 @@ function saveNewEvent() {
 
 	let date = dateValue.toLocaleString();
 
-	let stateSelect = document.getElementById('newEventState');
-	let stateIndex = stateSelect.selectedIndex;
-	let state = stateSelect.options[stateIndex].text;
+	// let stateSelect = document.getElementById('newEventState');
+	// let stateIndex = stateSelect.selectedIndex;
+	// let state = stateSelect.options[stateIndex].text;
 
 	//create a new event object
 	let newEvent = {
 		event: name,
 		city: city,
-		state: state,
+		// state: state,
 		attendance: attendance,
 		date: date
 	};
